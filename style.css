@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 85%;
+    height: 90%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    margin: 5px;
+    padding: 5px;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    /* border: 2px solid rgb(92, 0, 128); */
+}
+
+.content img {
+    width: 60%;
+    height: 88%;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 7px 13px 10px rgba(15, 15, 15, 0.525)
+}
+
+.content div.content_semaforo {
+    position: relative;
+    width: 170px;
+    height: 210px;
+    /* background-color: yellow; */
+    margin-top: 120px;
+    margin-left: 68px;
+}
+
+.content_semaforo div.sem {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 180px;
+    justify-content: space-around;
+    margin-top: -10px;
+}
+
+.content_semaforo div.red {
+    position: relative;
+    background-color: rgb(247, 24, 24);
+    box-shadow: 0 0 10px 3px rgb(247, 24, 24);
+    width: 42px;
+    height: 43px;
+    border-radius: 50%;
+    padding-top: 5px;
+    margin-left: 31px;
+}
+
+.content_semaforo div.yellow {
+    position: relative;
+    background-color: yellow;
+    box-shadow: 0 0 10px 3px yellow;
+    width: 42px;
+    height: 43px;
+    border-radius: 50%;
+    margin-top: 13px;
+    margin-left: 31px;
+}
+
+.content_semaforo div.green {
+    position: relative;
+    background-color: rgb(20, 204, 20);
+    box-shadow: 0 0 10px 3px rgb(20, 204, 20);
+    width: 42px;
+    height: 43px;
+    border-radius: 50%;
+    margin-top: 72px;
+    margin-left: 31px;
+}
+
+@media (max-width: 600px) {
+    .content {
+        width: 100%;
+        height: 90%;
+    }
+
+    .content img {
+        width: 90%;
+        height: 88%;
+    }
+    
+    .content div.content_semaforo {
+        width: 113px;
+        height: 210px;
+        margin-top: -150px;
+        margin-left: 15px;
+    }
+}
+
+
+@media (max-width: 834px) {
+    .content {
+        width: 100%;
+        height: 90%;
+    }
+
+    .content img {
+        width: 93%;
+        height: 88%;
+    }
+
+    .content div.content_semaforo {
+        width: 113px;
+        height: 210px;
+        margin-top: 155px;
+        margin-left: 10px;
+    }
+}
